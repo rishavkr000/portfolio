@@ -89,7 +89,7 @@ const ContactSection = () => {
                 <div>
                   <h4 className="font-medium">Email</h4>
                   <a 
-                    href="mailto:contact@example.com" 
+                    href={`mailto:${CONTACT_EMAIL}`} 
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     {CONTACT_EMAIL}
@@ -102,7 +102,7 @@ const ContactSection = () => {
                 <div>
                   <h4 className="font-medium">Phone</h4>
                   <a 
-                    href="tel:+11234567890" 
+                    href={`tel:${CONTACT_PHONE}`} 
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     {CONTACT_PHONE}

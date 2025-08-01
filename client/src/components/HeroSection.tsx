@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 
 const GITHUB_URL = import.meta.env.VITE_GITHUB_URL;
 const LINKEDIN_URL = import.meta.env.VITE_LINKEDIN_URL;
-const CV_URL = import.meta.env.VITE_CV_URL;
+const CV_URL = "/cv/my_resume.pdf";
 
 const HeroSection = () => {
   return (
@@ -22,7 +22,7 @@ const HeroSection = () => {
               Crafting Digital <span className="text-primary">Experiences</span> That Inspire
             </h1>
             <p className="text-muted-foreground text-lg max-w-md">
-              I design and develop web applications that are beautiful, functional, and provide exceptional user experiences.
+              I design and develop performant web apps with clean UI and delightful UX.
             </p>
             <div className="flex flex-wrap gap-4 pt-2">
               <Button 
@@ -53,6 +53,7 @@ const HeroSection = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-card hover:bg-secondary transition-colors p-3 rounded-full"
+                aria-label="GitHub Profile"
               >
                 <Github className="h-5 w-5" />
               </a>
