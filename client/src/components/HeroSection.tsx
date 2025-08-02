@@ -16,7 +16,7 @@ const HeroSection = () => {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6 animate-fade-in">
             <span className="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">
-              Full Stack Developer
+              Full Stack Developer (MERN Stack)
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               Crafting Digital <span className="text-primary">Experiences</span> That Inspire
@@ -24,7 +24,7 @@ const HeroSection = () => {
             <p className="text-muted-foreground text-lg max-w-md">
               I design and develop performant web apps with clean UI and delightful UX.
             </p>
-            <div className="flex flex-wrap gap-4 pt-2">
+            <div className="flex gap-2 md:gap-4 pt-2">
               <Button 
                 size="lg"
                 onClick={() => document.getElementById('projects')?.scrollIntoView()}
@@ -32,7 +32,7 @@ const HeroSection = () => {
                 View My Work
               </Button>
               <Button 
-                variant="outline" 
+                variant='outline'
                 size="lg"
                 onClick={() => {
                   const link = document.createElement("a");
@@ -42,8 +42,9 @@ const HeroSection = () => {
                   link.click();
                   document.body.removeChild(link);
                 }}
+                className='w-40 md:w-auto'
               >
-                <FileText className="mr-2 h-5 w-5" />
+                <FileText className="h-5 w-4" />
                 Download CV
               </Button>
             </div>
@@ -73,14 +74,14 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+        {/* <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
           <a 
             href="#about" 
             className="bg-card hover:bg-secondary transition-colors p-3 rounded-full inline-block"
           >
             <ArrowDown className="h-5 w-5" />
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

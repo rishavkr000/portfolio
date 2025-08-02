@@ -5,9 +5,9 @@ const AboutSection = () => {
   return (
     <section id="about" className="bg-card/30">
       <div className="section-container">
-        <div className="flex flex-col md:flex-row gap-12 items-center">
+        <div className="flex flex-col md:flex-row gap-10 items-center">
           <div className="md:w-1/2 animate-fade-in">
-            <div className="relative h-[400px] rounded-xl overflow-hidden">
+            <div className="relative md:h-[400px] rounded-xl overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/30 rounded-xl">
                 <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072')] bg-cover bg-center mix-blend-overlay"></div>
               </div>
