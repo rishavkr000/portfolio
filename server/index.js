@@ -25,7 +25,7 @@ app.post('/send-email', (req, res) => {
 
   const mailOptions = {
     from: email, // Sender's email (user ka email)
-    to: process.env.EMAIL_USER, // Receiver's email (aapka email)
+    to: process.env.EMAIL_USER, // Receiver's email
     subject: subject,
     text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
   };
