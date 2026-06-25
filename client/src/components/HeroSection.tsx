@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 
 const GITHUB_URL = import.meta.env.VITE_GITHUB_URL;
 const LINKEDIN_URL = import.meta.env.VITE_LINKEDIN_URL;
-const CV_URL = "/cv/my_resume.pdf";
+const CV_URL = "/cv/Rishav_Resume_Full_Stack_Engineer.pdf";
 
 const HeroSection = () => {
   return (
